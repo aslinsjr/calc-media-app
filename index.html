@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Scripts -->
+    <script src="script.js" defer ></script>
+</head>
+<body>
+     <header>
+        <h1></h1>
+     </header>
+     <main class="main-container">
+        <form class="form-container">
+            <div class="nome-container">
+                <label for="nome">Informe seu nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Seu nome aqui">
+            </div>
+            <div class="notas-container">
+                <label for="nota1">Digite sua primeira nota:</label>
+                <input type="text" name="nota1" id="nota1">
+            </div>
+            <div class="notas-container">
+                <label for="nota2">Digite sua segunda nota:</label>
+                <input type="text" name="nota2" id="nota2">
+            </div>
+            <div class="frequencia-container">
+                <label for="frequencia">Qual foi a sua freqência esse semestre?</label>
+                <input type="text" name="frequencia" id="frequencia" placeholder="%">
+            </div>
+            <div class="submit-container">
+                <p id="submit-btn">Verificar Aprovação</p>
+            </div>
+        </form>
+        <!-- Resultado -->
+        <div class="result-container hidden">
+            <div class="top-container">
+                <span id="print-name"></span>
+            </div>
+            <p>Sua média final é</p>
+            <span id="print-media"></span>
+            <p>e você foi </p>
+            <span id="print-result"></span>
+        </div>
+     </main>
+</body>
+</html>
